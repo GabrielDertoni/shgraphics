@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <curses.h>
-#include "library/helpers.h"
-#include "library/shgraphics.h"
-#include "library/printchar.h"
+#include "../library/helpers.h"
+#include "../library/shgraphics.h"
+#include "../library/printchar.h"
 
 #define UP 0
 #define LEFT 1

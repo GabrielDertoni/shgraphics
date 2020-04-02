@@ -6,7 +6,7 @@
 #include <time.h>
 #include <wchar.h>
 #include <curses.h>
-#include "shgraphics.h"
+#include "../library/shgraphics.h"
 
 int frameCount;
 int rows, columns;
