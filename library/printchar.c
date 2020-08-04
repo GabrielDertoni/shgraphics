@@ -6,7 +6,7 @@
 #include "printchar.h"
 
 void printchar(int x, int y, char c, wchar_t scr) {
-	if (c > 90) c -= 32;
+	if (c > 96 && c < 123) c -= 32;
 
 	char str[51];
 	switch(c) {
@@ -222,6 +222,118 @@ void printchar(int x, int y, char c, wchar_t scr) {
 			"    ##    "
 			"  ##      "
 			"##########");
+			break;
+		case '0':
+			strcpy(str,
+			"##########"
+			"##      ##"
+			"##      ##"
+			"##      ##"
+			"##########");
+			break;
+		case '1':
+			strcpy(str,
+			"    ##    "
+			"  ####    "
+			"    ##    "
+			"    ##    "
+			"  ######  ");
+			break;
+		case '2':
+			strcpy(str,
+			"##########"
+			"        ##"
+			"##########"
+			"##        "
+			"##########");
+			break;
+		case '3':
+			strcpy(str,
+			"##########"
+			"        ##"
+			"##########"
+			"        ##"
+			"##########");
+			break;
+		case '4':
+			strcpy(str,
+			"##    ##  "
+			"##    ##  "
+			"##########"
+			"      ##  "
+			"      ##  ");
+			break;
+		case '5':
+			strcpy(str,
+			"##########"
+			"##        "
+			"##########"
+			"        ##"
+			"##########");
+			break;
+		case '6':
+			strcpy(str,
+			"##########"
+			"##        "
+			"##########"
+			"##      ##"
+			"##########");
+			break;
+		case '7':
+			strcpy(str,
+			"##########"
+			"##      ##"
+			"        ##"
+			"        ##"
+			"        ##");
+			break;
+		case '8':
+			strcpy(str,
+			"##########"
+			"##      ##"
+			"##########"
+			"##      ##"
+			"##########");
+			break;
+		case '9':
+			strcpy(str,
+			"##########"
+			"##      ##"
+			"##########"
+			"        ##"
+			"##########");
+			break;
+		case '+':
+			strcpy(str,
+			"          "
+			"    ##    "
+			"  ######  "
+			"    ##    "
+			"          ");
+			break;
+		case '-':
+			strcpy(str,
+			"          "
+			"          "
+			"  ######  "
+			"          "
+			"          ");
+			break;
+		case '.':
+			strcpy(str,
+			"          "
+			"          "
+			"          "
+			"          "
+			"    ##    ");
+			break;
+		case '%':
+			strcpy(str,
+			"####    ##"
+			"####  ##  "
+			"    ##    "
+			"  ##  ####"
+			"##    ####");
 			break;
 		defalut:
 			strcpy(str,
